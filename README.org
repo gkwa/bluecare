@@ -1,4 +1,10 @@
+Flow:
+
 + pull down list of services if endpoints.json doesn't exist
-+ add new ones to endpoints_edited.json and don't overwrite urls that have been modified
-  
-  
+
++ manually edit console urls if they don't match real console urls
+
++ git commit edited json and push
+
++ add new ones to endpoints_edited.json and don't overwrite urls that
+  have been modified
