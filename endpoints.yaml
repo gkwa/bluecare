@@ -1,9 +1,17 @@
 service_names:
+
 - lambda:
     url: https://us-west-1.console.aws.amazon.com/lambda/home?region=us-west-1#/functions
+
+
 - s3:
     url: https://s3.console.aws.amazon.com/s3/buckets?region=us-west-1
+
+
 - ec2:
     url: 'https://us-west-1.console.aws.amazon.com/ec2/home?region=us-west-1#Instances:'
+
 - dynamodb:
     url: https://us-west-1.console.aws.amazon.com/dynamodbv2/home?region=us-west-1#dashboard
+
+
