@@ -2,6 +2,8 @@ Flow:
 
 + pull down list of services if endpoints.json doesn't exist
 
++ blindly generate console url from service name
+
 + manually edit console urls if they don't match real console urls
 
 + git commit edited json and push
