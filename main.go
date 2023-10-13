@@ -3,11 +3,11 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"io"
 	"net/http"
 	"os"
 
 	"gopkg.in/yaml.v2"
-	"io"
 )
 
 func main() {

@@ -27,7 +27,8 @@ service_names:
 - contact-lens
 - sdb
 - dataexchange
-- dynamodb
+- dynamodb:
+    url: https://us-west-1.console.aws.amazon.com/dynamodbv2/home?region=us-west-1#dashboard
 - ingest.timestream
 - route53domains
 - macie2
@@ -125,7 +126,8 @@ service_names:
 - amplify
 - aps
 - auditmanager
-- ec2
+- ec2:
+    url: 'https://us-west-1.console.aws.amazon.com/ec2/home?region=us-west-1#Instances:'
 - es
 - kinesisanalytics
 - lookoutequipment
@@ -190,7 +192,8 @@ service_names:
 - cognito-idp
 - docdb
 - events
-- s3
+- s3:
+    url: https://s3.console.aws.amazon.com/s3/buckets?region=us-west-1
 - securityhub
 - synthetics
 - cloud9
@@ -304,7 +307,8 @@ service_names:
 - braket
 - controltower
 - glacier
-- lambda
+- lambda:
+    url: https://us-west-1.console.aws.amazon.com/lambda/home?region=us-west-1#/functions
 - resource-groups
 - route53-recovery-control-config
 - runtime-v2-lex
