@@ -1,5 +1,5 @@
 {
-  "service_names": {
+  "services": {
     "a4b": {
       "console": "https://us-west-1.console.aws.amazon.com/managedblockchain/home?region=us-west-1#networks"
     },

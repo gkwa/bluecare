@@ -6,7 +6,7 @@ GO_DEPS := $(shell find . -name go.mod -o -name go.sum)
 
 $(BIN): $(GO_FILES) $(GO_DEPS)
 	$(MAKE) pretty
-	go build -o $(BIN) main.go
+	go build -o $(BIN) cmd/main.go
 
 test: $(BIN)
 	./$(BIN)

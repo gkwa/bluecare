@@ -1,15 +1,44 @@
-package main
+package bluecare
 
 import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"log"
 	"log/slog"
 	"net/http"
 	"os"
 )
 
-func main() {
+func load() {
+	file, err := os.Open("endpoints_edited.json")
+	if err != nil {
+		log.Fatalf("Error opening the JSON file: %v", err)
+		return
+	}
+	defer file.Close() // Close the file when done
+
+	var serviceList ServiceList
+
+	decoder := json.NewDecoder(file)
+
+	if err := decoder.Decode(&serviceList); err != nil {
+		log.Fatalf("Error decoding JSON: %v", err)
+		return
+	}
+
+	var services []Service
+	for name, service := range serviceList.Services {
+		service.Name = name
+		services = append(services, service)
+	}
+
+	for _, service := range services {
+		slog.Debug("services", "service", service.Name, "url", service.ConsoleURL)
+	}
+}
+
+func fetchAndReconcile() int {
 	url := "https://raw.githubusercontent.com/aws/aws-sdk-net/master/sdk/src/Core/endpoints.json"
 	jsonIncoming := "endpoints.json"
 	jsonEdited := "endpoints_edited.json"
@@ -23,28 +52,28 @@ func main() {
 		response, err := http.Get(url)
 		if err != nil {
 			slog.Error("Failed to download the JSON file.")
-			os.Exit(1)
+			return 1
 		}
 		defer response.Body.Close()
 
 		file, err := os.Create(jsonIncoming)
 		if err != nil {
 			slog.Error("Failed to create JSON file.")
-			os.Exit(1)
+			return 1
 		}
 		defer file.Close()
 
 		_, err = io.Copy(file, response.Body)
 		if err != nil {
 			slog.Error("Failed to save JSON file.")
-			os.Exit(1)
+			return 1
 		}
 	}
 
 	jsonFile, err := os.Open(jsonIncoming)
 	if err != nil {
 		slog.Error("Failed to read JSON file.")
-		os.Exit(1)
+		return 1
 	}
 	defer jsonFile.Close()
 
@@ -53,25 +82,25 @@ func main() {
 	err = decoder.Decode(&data)
 	if err != nil {
 		slog.Error("Failed to parse JSON data.")
-		os.Exit(1)
+		return 1
 	}
 
 	partitions, ok := data["partitions"].([]interface{})
 	if !ok || len(partitions) == 0 {
 		slog.Error("Invalid JSON data structure.")
-		os.Exit(1)
+		return 1
 	}
 
 	partition, ok := partitions[0].(map[string]interface{})
 	if !ok {
 		slog.Error("Invalid JSON data structure.")
-		os.Exit(1)
+		return 1
 	}
 
 	services, ok := partition["services"].(map[string]interface{})
 	if !ok {
 		slog.Error("Invalid JSON data structure.")
-		os.Exit(1)
+		return 1
 	}
 
 	newServiceNames := make(map[string]map[string]string)
@@ -86,15 +115,15 @@ func main() {
 	}
 
 	jsonData := map[string]interface{}{
-		"service_names": newServiceNames,
+		"services": newServiceNames,
 	}
 
 	if err := writeJSONFile(jsonEdited, jsonData); err != nil {
 		slog.Error("Failed to write JSON file.")
-		os.Exit(1)
+		return 1
 	}
 
-	fmt.Printf("Service names and URLs updated:\n")
+	return 0
 }
 
 func writeJSONFile(filePath string, data interface{}) error {
@@ -129,5 +158,12 @@ func readExistingData(filePath string) map[string]map[string]string {
 		return make(map[string]map[string]string)
 	}
 
-	return data["service_names"]
+	return data["services"]
+}
+
+func Execute() int {
+	fetchAndReconcile()
+	load()
+
+	return 0
 }
