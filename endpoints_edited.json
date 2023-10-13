@@ -1,0 +1,949 @@
+{
+  "service_names": {
+    "a4b": {
+      "console": "https://us-west-1.console.aws.amazon.com/a4b/home?region=us-west-1#"
+    },
+    "access-analyzer": {
+      "console": "https://us-west-1.console.aws.amazon.com/access-analyzer/home?region=us-west-1#"
+    },
+    "account": {
+      "console": "https://us-west-1.console.aws.amazon.com/account/home?region=us-west-1#"
+    },
+    "acm": {
+      "console": "https://us-west-1.console.aws.amazon.com/acm/home?region=us-west-1#"
+    },
+    "acm-pca": {
+      "console": "https://us-west-1.console.aws.amazon.com/acm-pca/home?region=us-west-1#"
+    },
+    "airflow": {
+      "console": "https://us-west-1.console.aws.amazon.com/airflow/home?region=us-west-1#"
+    },
+    "amplify": {
+      "console": "https://us-west-1.console.aws.amazon.com/amplify/home?region=us-west-1#"
+    },
+    "amplifybackend": {
+      "console": "https://us-west-1.console.aws.amazon.com/amplifybackend/home?region=us-west-1#"
+    },
+    "amplifyuibuilder": {
+      "console": "https://us-west-1.console.aws.amazon.com/amplifyuibuilder/home?region=us-west-1#"
+    },
+    "aoss": {
+      "console": "https://us-west-1.console.aws.amazon.com/aoss/home?region=us-west-1#"
+    },
+    "api.detective": {
+      "console": "https://us-west-1.console.aws.amazon.com/api.detective/home?region=us-west-1#"
+    },
+    "api.ecr": {
+      "console": "https://us-west-1.console.aws.amazon.com/api.ecr/home?region=us-west-1#"
+    },
+    "api.ecr-public": {
+      "console": "https://us-west-1.console.aws.amazon.com/api.ecr-public/home?region=us-west-1#"
+    },
+    "api.elastic-inference": {
+      "console": "https://us-west-1.console.aws.amazon.com/api.elastic-inference/home?region=us-west-1#"
+    },
+    "api.fleethub.iot": {
+      "console": "https://us-west-1.console.aws.amazon.com/api.fleethub.iot/home?region=us-west-1#"
+    },
+    "api.iotdeviceadvisor": {
+      "console": "https://us-west-1.console.aws.amazon.com/api.iotdeviceadvisor/home?region=us-west-1#"
+    },
+    "api.iotwireless": {
+      "console": "https://us-west-1.console.aws.amazon.com/api.iotwireless/home?region=us-west-1#"
+    },
+    "api.mediatailor": {
+      "console": "https://us-west-1.console.aws.amazon.com/api.mediatailor/home?region=us-west-1#"
+    },
+    "api.pricing": {
+      "console": "https://us-west-1.console.aws.amazon.com/api.pricing/home?region=us-west-1#"
+    },
+    "api.sagemaker": {
+      "console": "https://us-west-1.console.aws.amazon.com/api.sagemaker/home?region=us-west-1#"
+    },
+    "api.tunneling.iot": {
+      "console": "https://us-west-1.console.aws.amazon.com/api.tunneling.iot/home?region=us-west-1#"
+    },
+    "apigateway": {
+      "console": "https://us-west-1.console.aws.amazon.com/apigateway/home?region=us-west-1#"
+    },
+    "app-integrations": {
+      "console": "https://us-west-1.console.aws.amazon.com/app-integrations/home?region=us-west-1#"
+    },
+    "appconfig": {
+      "console": "https://us-west-1.console.aws.amazon.com/appconfig/home?region=us-west-1#"
+    },
+    "appconfigdata": {
+      "console": "https://us-west-1.console.aws.amazon.com/appconfigdata/home?region=us-west-1#"
+    },
+    "appflow": {
+      "console": "https://us-west-1.console.aws.amazon.com/appflow/home?region=us-west-1#"
+    },
+    "application-autoscaling": {
+      "console": "https://us-west-1.console.aws.amazon.com/application-autoscaling/home?region=us-west-1#"
+    },
+    "applicationinsights": {
+      "console": "https://us-west-1.console.aws.amazon.com/applicationinsights/home?region=us-west-1#"
+    },
+    "appmesh": {
+      "console": "https://us-west-1.console.aws.amazon.com/appmesh/home?region=us-west-1#"
+    },
+    "apprunner": {
+      "console": "https://us-west-1.console.aws.amazon.com/apprunner/home?region=us-west-1#"
+    },
+    "appstream2": {
+      "console": "https://us-west-1.console.aws.amazon.com/appstream2/home?region=us-west-1#"
+    },
+    "appsync": {
+      "console": "https://us-west-1.console.aws.amazon.com/appsync/home?region=us-west-1#"
+    },
+    "aps": {
+      "console": "https://us-west-1.console.aws.amazon.com/aps/home?region=us-west-1#"
+    },
+    "arc-zonal-shift": {
+      "console": "https://us-west-1.console.aws.amazon.com/arc-zonal-shift/home?region=us-west-1#"
+    },
+    "athena": {
+      "console": "https://us-west-1.console.aws.amazon.com/athena/home?region=us-west-1#"
+    },
+    "auditmanager": {
+      "console": "https://us-west-1.console.aws.amazon.com/auditmanager/home?region=us-west-1#"
+    },
+    "autoscaling": {
+      "console": "https://us-west-1.console.aws.amazon.com/autoscaling/home?region=us-west-1#"
+    },
+    "autoscaling-plans": {
+      "console": "https://us-west-1.console.aws.amazon.com/autoscaling-plans/home?region=us-west-1#"
+    },
+    "backup": {
+      "console": "https://us-west-1.console.aws.amazon.com/backup/home?region=us-west-1#"
+    },
+    "backup-gateway": {
+      "console": "https://us-west-1.console.aws.amazon.com/backup-gateway/home?region=us-west-1#"
+    },
+    "backupstorage": {
+      "console": "https://us-west-1.console.aws.amazon.com/backupstorage/home?region=us-west-1#"
+    },
+    "batch": {
+      "console": "https://us-west-1.console.aws.amazon.com/batch/home?region=us-west-1#"
+    },
+    "bedrock": {
+      "console": "https://us-west-1.console.aws.amazon.com/bedrock/home?region=us-west-1#"
+    },
+    "billingconductor": {
+      "console": "https://us-west-1.console.aws.amazon.com/billingconductor/home?region=us-west-1#"
+    },
+    "braket": {
+      "console": "https://us-west-1.console.aws.amazon.com/braket/home?region=us-west-1#"
+    },
+    "budgets": {
+      "console": "https://us-west-1.console.aws.amazon.com/budgets/home?region=us-west-1#"
+    },
+    "cases": {
+      "console": "https://us-west-1.console.aws.amazon.com/cases/home?region=us-west-1#"
+    },
+    "cassandra": {
+      "console": "https://us-west-1.console.aws.amazon.com/cassandra/home?region=us-west-1#"
+    },
+    "catalog.marketplace": {
+      "console": "https://us-west-1.console.aws.amazon.com/catalog.marketplace/home?region=us-west-1#"
+    },
+    "ce": {
+      "console": "https://us-west-1.console.aws.amazon.com/ce/home?region=us-west-1#"
+    },
+    "chime": {
+      "console": "https://us-west-1.console.aws.amazon.com/chime/home?region=us-west-1#"
+    },
+    "cleanrooms": {
+      "console": "https://us-west-1.console.aws.amazon.com/cleanrooms/home?region=us-west-1#"
+    },
+    "cloud9": {
+      "console": "https://us-west-1.console.aws.amazon.com/cloud9/home?region=us-west-1#"
+    },
+    "cloudcontrolapi": {
+      "console": "https://us-west-1.console.aws.amazon.com/cloudcontrolapi/home?region=us-west-1#"
+    },
+    "clouddirectory": {
+      "console": "https://us-west-1.console.aws.amazon.com/clouddirectory/home?region=us-west-1#"
+    },
+    "cloudformation": {
+      "console": "https://us-west-1.console.aws.amazon.com/cloudformation/home?region=us-west-1#"
+    },
+    "cloudfront": {
+      "console": "https://us-west-1.console.aws.amazon.com/cloudfront/home?region=us-west-1#"
+    },
+    "cloudhsm": {
+      "console": "https://us-west-1.console.aws.amazon.com/cloudhsm/home?region=us-west-1#"
+    },
+    "cloudhsmv2": {
+      "console": "https://us-west-1.console.aws.amazon.com/cloudhsmv2/home?region=us-west-1#"
+    },
+    "cloudsearch": {
+      "console": "https://us-west-1.console.aws.amazon.com/cloudsearch/home?region=us-west-1#"
+    },
+    "cloudtrail": {
+      "console": "https://us-west-1.console.aws.amazon.com/cloudtrail/home?region=us-west-1#"
+    },
+    "cloudtrail-data": {
+      "console": "https://us-west-1.console.aws.amazon.com/cloudtrail-data/home?region=us-west-1#"
+    },
+    "codeartifact": {
+      "console": "https://us-west-1.console.aws.amazon.com/codeartifact/home?region=us-west-1#"
+    },
+    "codebuild": {
+      "console": "https://us-west-1.console.aws.amazon.com/codebuild/home?region=us-west-1#"
+    },
+    "codecatalyst": {
+      "console": "https://us-west-1.console.aws.amazon.com/codecatalyst/home?region=us-west-1#"
+    },
+    "codecommit": {
+      "console": "https://us-west-1.console.aws.amazon.com/codecommit/home?region=us-west-1#"
+    },
+    "codedeploy": {
+      "console": "https://us-west-1.console.aws.amazon.com/codedeploy/home?region=us-west-1#"
+    },
+    "codeguru-reviewer": {
+      "console": "https://us-west-1.console.aws.amazon.com/codeguru-reviewer/home?region=us-west-1#"
+    },
+    "codepipeline": {
+      "console": "https://us-west-1.console.aws.amazon.com/codepipeline/home?region=us-west-1#"
+    },
+    "codestar": {
+      "console": "https://us-west-1.console.aws.amazon.com/codestar/home?region=us-west-1#"
+    },
+    "codestar-connections": {
+      "console": "https://us-west-1.console.aws.amazon.com/codestar-connections/home?region=us-west-1#"
+    },
+    "codestar-notifications": {
+      "console": "https://us-west-1.console.aws.amazon.com/codestar-notifications/home?region=us-west-1#"
+    },
+    "cognito-identity": {
+      "console": "https://us-west-1.console.aws.amazon.com/cognito-identity/home?region=us-west-1#"
+    },
+    "cognito-idp": {
+      "console": "https://us-west-1.console.aws.amazon.com/cognito-idp/home?region=us-west-1#"
+    },
+    "cognito-sync": {
+      "console": "https://us-west-1.console.aws.amazon.com/cognito-sync/home?region=us-west-1#"
+    },
+    "comprehend": {
+      "console": "https://us-west-1.console.aws.amazon.com/comprehend/home?region=us-west-1#"
+    },
+    "comprehendmedical": {
+      "console": "https://us-west-1.console.aws.amazon.com/comprehendmedical/home?region=us-west-1#"
+    },
+    "compute-optimizer": {
+      "console": "https://us-west-1.console.aws.amazon.com/compute-optimizer/home?region=us-west-1#"
+    },
+    "config": {
+      "console": "https://us-west-1.console.aws.amazon.com/config/home?region=us-west-1#"
+    },
+    "connect": {
+      "console": "https://us-west-1.console.aws.amazon.com/connect/home?region=us-west-1#"
+    },
+    "connect-campaigns": {
+      "console": "https://us-west-1.console.aws.amazon.com/connect-campaigns/home?region=us-west-1#"
+    },
+    "contact-lens": {
+      "console": "https://us-west-1.console.aws.amazon.com/contact-lens/home?region=us-west-1#"
+    },
+    "controltower": {
+      "console": "https://us-west-1.console.aws.amazon.com/controltower/home?region=us-west-1#"
+    },
+    "cur": {
+      "console": "https://us-west-1.console.aws.amazon.com/cur/home?region=us-west-1#"
+    },
+    "data-ats.iot": {
+      "console": "https://us-west-1.console.aws.amazon.com/data-ats.iot/home?region=us-west-1#"
+    },
+    "data.iot": {
+      "console": "https://us-west-1.console.aws.amazon.com/data.iot/home?region=us-west-1#"
+    },
+    "data.jobs.iot": {
+      "console": "https://us-west-1.console.aws.amazon.com/data.jobs.iot/home?region=us-west-1#"
+    },
+    "data.mediastore": {
+      "console": "https://us-west-1.console.aws.amazon.com/data.mediastore/home?region=us-west-1#"
+    },
+    "databrew": {
+      "console": "https://us-west-1.console.aws.amazon.com/databrew/home?region=us-west-1#"
+    },
+    "dataexchange": {
+      "console": "https://us-west-1.console.aws.amazon.com/dataexchange/home?region=us-west-1#"
+    },
+    "datapipeline": {
+      "console": "https://us-west-1.console.aws.amazon.com/datapipeline/home?region=us-west-1#"
+    },
+    "datasync": {
+      "console": "https://us-west-1.console.aws.amazon.com/datasync/home?region=us-west-1#"
+    },
+    "datazone": {
+      "console": "https://us-west-1.console.aws.amazon.com/datazone/home?region=us-west-1#"
+    },
+    "dax": {
+      "console": "https://us-west-1.console.aws.amazon.com/dax/home?region=us-west-1#"
+    },
+    "devicefarm": {
+      "console": "https://us-west-1.console.aws.amazon.com/devicefarm/home?region=us-west-1#"
+    },
+    "devops-guru": {
+      "console": "https://us-west-1.console.aws.amazon.com/devops-guru/home?region=us-west-1#"
+    },
+    "directconnect": {
+      "console": "https://us-west-1.console.aws.amazon.com/directconnect/home?region=us-west-1#"
+    },
+    "discovery": {
+      "console": "https://us-west-1.console.aws.amazon.com/discovery/home?region=us-west-1#"
+    },
+    "dlm": {
+      "console": "https://us-west-1.console.aws.amazon.com/dlm/home?region=us-west-1#"
+    },
+    "dms": {
+      "console": "https://us-west-1.console.aws.amazon.com/dms/home?region=us-west-1#"
+    },
+    "docdb": {
+      "console": "https://us-west-1.console.aws.amazon.com/docdb/home?region=us-west-1#"
+    },
+    "drs": {
+      "console": "https://us-west-1.console.aws.amazon.com/drs/home?region=us-west-1#"
+    },
+    "ds": {
+      "console": "https://us-west-1.console.aws.amazon.com/ds/home?region=us-west-1#"
+    },
+    "dynamodb": {
+      "console": "https://us-west-1.console.aws.amazon.com/dynamodb/home?region=us-west-1#"
+    },
+    "ebs": {
+      "console": "https://us-west-1.console.aws.amazon.com/ebs/home?region=us-west-1#"
+    },
+    "ec2": {
+      "console": "https://us-west-1.console.aws.amazon.com/ec2/home?region=us-west-1#"
+    },
+    "ecs": {
+      "console": "https://us-west-1.console.aws.amazon.com/ecs/home?region=us-west-1#"
+    },
+    "edge.sagemaker": {
+      "console": "https://us-west-1.console.aws.amazon.com/edge.sagemaker/home?region=us-west-1#"
+    },
+    "eks": {
+      "console": "https://us-west-1.console.aws.amazon.com/eks/home?region=us-west-1#"
+    },
+    "elasticache": {
+      "console": "https://us-west-1.console.aws.amazon.com/elasticache/home?region=us-west-1#"
+    },
+    "elasticbeanstalk": {
+      "console": "https://us-west-1.console.aws.amazon.com/elasticbeanstalk/home?region=us-west-1#"
+    },
+    "elasticfilesystem": {
+      "console": "https://us-west-1.console.aws.amazon.com/elasticfilesystem/home?region=us-west-1#"
+    },
+    "elasticloadbalancing": {
+      "console": "https://us-west-1.console.aws.amazon.com/elasticloadbalancing/home?region=us-west-1#"
+    },
+    "elasticmapreduce": {
+      "console": "https://us-west-1.console.aws.amazon.com/elasticmapreduce/home?region=us-west-1#"
+    },
+    "elastictranscoder": {
+      "console": "https://us-west-1.console.aws.amazon.com/elastictranscoder/home?region=us-west-1#"
+    },
+    "email": {
+      "console": "https://us-west-1.console.aws.amazon.com/email/home?region=us-west-1#"
+    },
+    "emr-containers": {
+      "console": "https://us-west-1.console.aws.amazon.com/emr/home?region=us-west-1#"
+    },
+    "emr-serverless": {
+      "console": "https://us-west-1.console.aws.amazon.com/emr/home?region=us-west-1#"
+    },
+    "entitlement.marketplace": {
+      "console": "https://us-west-1.console.aws.amazon.com/entitlement.marketplace/home?region=us-west-1#"
+    },
+    "es": {
+      "console": "https://us-west-1.console.aws.amazon.com/es/home?region=us-west-1#"
+    },
+    "events": {
+      "console": "https://us-west-1.console.aws.amazon.com/events/home?region=us-west-1#"
+    },
+    "evidently": {
+      "console": "https://us-west-1.console.aws.amazon.com/evidently/home?region=us-west-1#"
+    },
+    "finspace": {
+      "console": "https://us-west-1.console.aws.amazon.com/finspace/home?region=us-west-1#"
+    },
+    "finspace-api": {
+      "console": "https://us-west-1.console.aws.amazon.com/finspace-api/home?region=us-west-1#"
+    },
+    "firehose": {
+      "console": "https://us-west-1.console.aws.amazon.com/firehose/home?region=us-west-1#"
+    },
+    "fms": {
+      "console": "https://us-west-1.console.aws.amazon.com/fms/home?region=us-west-1#"
+    },
+    "forecast": {
+      "console": "https://us-west-1.console.aws.amazon.com/forecast/home?region=us-west-1#"
+    },
+    "forecastquery": {
+      "console": "https://us-west-1.console.aws.amazon.com/forecastquery/home?region=us-west-1#"
+    },
+    "frauddetector": {
+      "console": "https://us-west-1.console.aws.amazon.com/frauddetector/home?region=us-west-1#"
+    },
+    "fsx": {
+      "console": "https://us-west-1.console.aws.amazon.com/fsx/home?region=us-west-1#"
+    },
+    "gamelift": {
+      "console": "https://us-west-1.console.aws.amazon.com/gamelift/home?region=us-west-1#"
+    },
+    "gamesparks": {
+      "console": "https://us-west-1.console.aws.amazon.com/gamesparks/home?region=us-west-1#"
+    },
+    "geo": {
+      "console": "https://us-west-1.console.aws.amazon.com/geo/home?region=us-west-1#"
+    },
+    "glacier": {
+      "console": "https://us-west-1.console.aws.amazon.com/glacier/home?region=us-west-1#"
+    },
+    "glue": {
+      "console": "https://us-west-1.console.aws.amazon.com/glue/home?region=us-west-1#"
+    },
+    "grafana": {
+      "console": "https://us-west-1.console.aws.amazon.com/grafana/home?region=us-west-1#"
+    },
+    "greengrass": {
+      "console": "https://us-west-1.console.aws.amazon.com/greengrass/home?region=us-west-1#"
+    },
+    "groundstation": {
+      "console": "https://us-west-1.console.aws.amazon.com/groundstation/home?region=us-west-1#"
+    },
+    "guardduty": {
+      "console": "https://us-west-1.console.aws.amazon.com/guardduty/home?region=us-west-1#"
+    },
+    "health": {
+      "console": "https://us-west-1.console.aws.amazon.com/health/home?region=us-west-1#"
+    },
+    "healthlake": {
+      "console": "https://us-west-1.console.aws.amazon.com/healthlake/home?region=us-west-1#"
+    },
+    "honeycode": {
+      "console": "https://us-west-1.console.aws.amazon.com/honeycode/home?region=us-west-1#"
+    },
+    "iam": {
+      "console": "https://us-west-1.console.aws.amazon.com/iam/home?region=us-west-1#"
+    },
+    "identity-chime": {
+      "console": "https://us-west-1.console.aws.amazon.com/identity-chime/home?region=us-west-1#"
+    },
+    "identitystore": {
+      "console": "https://us-west-1.console.aws.amazon.com/identitystore/home?region=us-west-1#"
+    },
+    "importexport": {
+      "console": "https://us-west-1.console.aws.amazon.com/importexport/home?region=us-west-1#"
+    },
+    "ingest.timestream": {
+      "console": "https://us-west-1.console.aws.amazon.com/ingest.timestream/home?region=us-west-1#"
+    },
+    "inspector": {
+      "console": "https://us-west-1.console.aws.amazon.com/inspector/home?region=us-west-1#"
+    },
+    "inspector2": {
+      "console": "https://us-west-1.console.aws.amazon.com/inspector2/home?region=us-west-1#"
+    },
+    "internetmonitor": {
+      "console": "https://us-west-1.console.aws.amazon.com/internetmonitor/home?region=us-west-1#"
+    },
+    "iot": {
+      "console": "https://us-west-1.console.aws.amazon.com/iot/home?region=us-west-1#"
+    },
+    "iotanalytics": {
+      "console": "https://us-west-1.console.aws.amazon.com/iotanalytics/home?region=us-west-1#"
+    },
+    "iotevents": {
+      "console": "https://us-west-1.console.aws.amazon.com/iotevents/home?region=us-west-1#"
+    },
+    "ioteventsdata": {
+      "console": "https://us-west-1.console.aws.amazon.com/ioteventsdata/home?region=us-west-1#"
+    },
+    "iotfleetwise": {
+      "console": "https://us-west-1.console.aws.amazon.com/iotfleetwise/home?region=us-west-1#"
+    },
+    "iotroborunner": {
+      "console": "https://us-west-1.console.aws.amazon.com/iotroborunner/home?region=us-west-1#"
+    },
+    "iotsecuredtunneling": {
+      "console": "https://us-west-1.console.aws.amazon.com/iotsecuredtunneling/home?region=us-west-1#"
+    },
+    "iotsitewise": {
+      "console": "https://us-west-1.console.aws.amazon.com/iotsitewise/home?region=us-west-1#"
+    },
+    "iotthingsgraph": {
+      "console": "https://us-west-1.console.aws.amazon.com/iotthingsgraph/home?region=us-west-1#"
+    },
+    "iottwinmaker": {
+      "console": "https://us-west-1.console.aws.amazon.com/iottwinmaker/home?region=us-west-1#"
+    },
+    "iotwireless": {
+      "console": "https://us-west-1.console.aws.amazon.com/iotwireless/home?region=us-west-1#"
+    },
+    "ivs": {
+      "console": "https://us-west-1.console.aws.amazon.com/ivs/home?region=us-west-1#"
+    },
+    "ivschat": {
+      "console": "https://us-west-1.console.aws.amazon.com/ivschat/home?region=us-west-1#"
+    },
+    "ivsrealtime": {
+      "console": "https://us-west-1.console.aws.amazon.com/ivsrealtime/home?region=us-west-1#"
+    },
+    "kafka": {
+      "console": "https://us-west-1.console.aws.amazon.com/kafka/home?region=us-west-1#"
+    },
+    "kafkaconnect": {
+      "console": "https://us-west-1.console.aws.amazon.com/kafkaconnect/home?region=us-west-1#"
+    },
+    "kendra": {
+      "console": "https://us-west-1.console.aws.amazon.com/kendra/home?region=us-west-1#"
+    },
+    "kendra-ranking": {
+      "console": "https://us-west-1.console.aws.amazon.com/kendra-ranking/home?region=us-west-1#"
+    },
+    "kinesis": {
+      "console": "https://us-west-1.console.aws.amazon.com/kinesis/home?region=us-west-1#"
+    },
+    "kinesisanalytics": {
+      "console": "https://us-west-1.console.aws.amazon.com/kinesisanalytics/home?region=us-west-1#"
+    },
+    "kinesisvideo": {
+      "console": "https://us-west-1.console.aws.amazon.com/kinesisvideo/home?region=us-west-1#"
+    },
+    "kms": {
+      "console": "https://us-west-1.console.aws.amazon.com/kms/home?region=us-west-1#"
+    },
+    "lakeformation": {
+      "console": "https://us-west-1.console.aws.amazon.com/lakeformation/home?region=us-west-1#"
+    },
+    "lambda": {
+      "console": "https://us-west-1.console.aws.amazon.com/lambda/home?region=us-west-1#"
+    },
+    "license-manager": {
+      "console": "https://us-west-1.console.aws.amazon.com/license-manager/home?region=us-west-1#"
+    },
+    "license-manager-linux-subscriptions": {
+      "console": "https://us-west-1.console.aws.amazon.com/license-manager-linux-subscriptions/home?region=us-west-1#"
+    },
+    "license-manager-user-subscriptions": {
+      "console": "https://us-west-1.console.aws.amazon.com/license-manager-user-subscriptions/home?region=us-west-1#"
+    },
+    "lightsail": {
+      "console": "https://us-west-1.console.aws.amazon.com/lightsail/home?region=us-west-1#"
+    },
+    "logs": {
+      "console": "https://us-west-1.console.aws.amazon.com/logs/home?region=us-west-1#"
+    },
+    "lookoutequipment": {
+      "console": "https://us-west-1.console.aws.amazon.com/lookoutequipment/home?region=us-west-1#"
+    },
+    "lookoutmetrics": {
+      "console": "https://us-west-1.console.aws.amazon.com/lookoutmetrics/home?region=us-west-1#"
+    },
+    "lookoutvision": {
+      "console": "https://us-west-1.console.aws.amazon.com/lookoutvision/home?region=us-west-1#"
+    },
+    "m2": {
+      "console": "https://us-west-1.console.aws.amazon.com/m2/home?region=us-west-1#"
+    },
+    "machinelearning": {
+      "console": "https://us-west-1.console.aws.amazon.com/machinelearning/home?region=us-west-1#"
+    },
+    "macie": {
+      "console": "https://us-west-1.console.aws.amazon.com/macie/home?region=us-west-1#"
+    },
+    "macie2": {
+      "console": "https://us-west-1.console.aws.amazon.com/macie2/home?region=us-west-1#"
+    },
+    "managedblockchain": {
+      "console": "https://us-west-1.console.aws.amazon.com/managedblockchain/home?region=us-west-1#"
+    },
+    "managedblockchain-query": {
+      "console": "https://us-west-1.console.aws.amazon.com/managedblockchain-query/home?region=us-west-1#"
+    },
+    "marketplacecommerceanalytics": {
+      "console": "https://us-west-1.console.aws.amazon.com/marketplacecommerceanalytics/home?region=us-west-1#"
+    },
+    "media-pipelines-chime": {
+      "console": "https://us-west-1.console.aws.amazon.com/media-pipelines-chime/home?region=us-west-1#"
+    },
+    "mediaconnect": {
+      "console": "https://us-west-1.console.aws.amazon.com/mediaconnect/home?region=us-west-1#"
+    },
+    "mediaconvert": {
+      "console": "https://us-west-1.console.aws.amazon.com/mediaconvert/home?region=us-west-1#"
+    },
+    "medialive": {
+      "console": "https://us-west-1.console.aws.amazon.com/medialive/home?region=us-west-1#"
+    },
+    "mediapackage": {
+      "console": "https://us-west-1.console.aws.amazon.com/mediapackage/home?region=us-west-1#"
+    },
+    "mediapackage-vod": {
+      "console": "https://us-west-1.console.aws.amazon.com/mediapackage-vod/home?region=us-west-1#"
+    },
+    "mediapackagev2": {
+      "console": "https://us-west-1.console.aws.amazon.com/mediapackagev2/home?region=us-west-1#"
+    },
+    "mediastore": {
+      "console": "https://us-west-1.console.aws.amazon.com/mediastore/home?region=us-west-1#"
+    },
+    "meetings-chime": {
+      "console": "https://us-west-1.console.aws.amazon.com/meetings-chime/home?region=us-west-1#"
+    },
+    "memory-db": {
+      "console": "https://us-west-1.console.aws.amazon.com/memory-db/home?region=us-west-1#"
+    },
+    "messaging-chime": {
+      "console": "https://us-west-1.console.aws.amazon.com/messaging-chime/home?region=us-west-1#"
+    },
+    "metering.marketplace": {
+      "console": "https://us-west-1.console.aws.amazon.com/metering.marketplace/home?region=us-west-1#"
+    },
+    "metrics.sagemaker": {
+      "console": "https://us-west-1.console.aws.amazon.com/metrics.sagemaker/home?region=us-west-1#"
+    },
+    "mgh": {
+      "console": "https://us-west-1.console.aws.amazon.com/mgh/home?region=us-west-1#"
+    },
+    "mgn": {
+      "console": "https://us-west-1.console.aws.amazon.com/mgn/home?region=us-west-1#"
+    },
+    "migrationhub-orchestrator": {
+      "console": "https://us-west-1.console.aws.amazon.com/migrationhub-orchestrator/home?region=us-west-1#"
+    },
+    "migrationhub-strategy": {
+      "console": "https://us-west-1.console.aws.amazon.com/migrationhub-strategy/home?region=us-west-1#"
+    },
+    "mobileanalytics": {
+      "console": "https://us-west-1.console.aws.amazon.com/mobileanalytics/home?region=us-west-1#"
+    },
+    "models-v2-lex": {
+      "console": "https://us-west-1.console.aws.amazon.com/models-v2-lex/home?region=us-west-1#"
+    },
+    "models.lex": {
+      "console": "https://us-west-1.console.aws.amazon.com/models.lex/home?region=us-west-1#"
+    },
+    "monitoring": {
+      "console": "https://us-west-1.console.aws.amazon.com/monitoring/home?region=us-west-1#"
+    },
+    "mq": {
+      "console": "https://us-west-1.console.aws.amazon.com/mq/home?region=us-west-1#"
+    },
+    "mturk-requester": {
+      "console": "https://us-west-1.console.aws.amazon.com/mturk-requester/home?region=us-west-1#"
+    },
+    "neptune": {
+      "console": "https://us-west-1.console.aws.amazon.com/neptune/home?region=us-west-1#"
+    },
+    "network-firewall": {
+      "console": "https://us-west-1.console.aws.amazon.com/network-firewall/home?region=us-west-1#"
+    },
+    "networkmanager": {
+      "console": "https://us-west-1.console.aws.amazon.com/networkmanager/home?region=us-west-1#"
+    },
+    "nimble": {
+      "console": "https://us-west-1.console.aws.amazon.com/nimble/home?region=us-west-1#"
+    },
+    "oam": {
+      "console": "https://us-west-1.console.aws.amazon.com/oam/home?region=us-west-1#"
+    },
+    "oidc": {
+      "console": "https://us-west-1.console.aws.amazon.com/oidc/home?region=us-west-1#"
+    },
+    "omics": {
+      "console": "https://us-west-1.console.aws.amazon.com/omics/home?region=us-west-1#"
+    },
+    "opsworks": {
+      "console": "https://us-west-1.console.aws.amazon.com/opsworks/home?region=us-west-1#"
+    },
+    "opsworks-cm": {
+      "console": "https://us-west-1.console.aws.amazon.com/opsworks-cm/home?region=us-west-1#"
+    },
+    "organizations": {
+      "console": "https://us-west-1.console.aws.amazon.com/organizations/home?region=us-west-1#"
+    },
+    "osis": {
+      "console": "https://us-west-1.console.aws.amazon.com/osis/home?region=us-west-1#"
+    },
+    "outposts": {
+      "console": "https://us-west-1.console.aws.amazon.com/outposts/home?region=us-west-1#"
+    },
+    "participant.connect": {
+      "console": "https://us-west-1.console.aws.amazon.com/participant.connect/home?region=us-west-1#"
+    },
+    "personalize": {
+      "console": "https://us-west-1.console.aws.amazon.com/personalize/home?region=us-west-1#"
+    },
+    "pi": {
+      "console": "https://us-west-1.console.aws.amazon.com/pi/home?region=us-west-1#"
+    },
+    "pinpoint": {
+      "console": "https://us-west-1.console.aws.amazon.com/pinpoint/home?region=us-west-1#"
+    },
+    "pipes": {
+      "console": "https://us-west-1.console.aws.amazon.com/pipes/home?region=us-west-1#"
+    },
+    "polly": {
+      "console": "https://us-west-1.console.aws.amazon.com/polly/home?region=us-west-1#"
+    },
+    "portal.sso": {
+      "console": "https://us-west-1.console.aws.amazon.com/portal.sso/home?region=us-west-1#"
+    },
+    "profile": {
+      "console": "https://us-west-1.console.aws.amazon.com/profile/home?region=us-west-1#"
+    },
+    "projects.iot1click": {
+      "console": "https://us-west-1.console.aws.amazon.com/projects.iot1click/home?region=us-west-1#"
+    },
+    "proton": {
+      "console": "https://us-west-1.console.aws.amazon.com/proton/home?region=us-west-1#"
+    },
+    "qldb": {
+      "console": "https://us-west-1.console.aws.amazon.com/qldb/home?region=us-west-1#"
+    },
+    "quicksight": {
+      "console": "https://us-west-1.console.aws.amazon.com/quicksight/home?region=us-west-1#"
+    },
+    "ram": {
+      "console": "https://us-west-1.console.aws.amazon.com/ram/home?region=us-west-1#"
+    },
+    "rbin": {
+      "console": "https://us-west-1.console.aws.amazon.com/rbin/home?region=us-west-1#"
+    },
+    "rds": {
+      "console": "https://us-west-1.console.aws.amazon.com/rds/home?region=us-west-1#"
+    },
+    "rds-data": {
+      "console": "https://us-west-1.console.aws.amazon.com/rds-data/home?region=us-west-1#"
+    },
+    "redshift": {
+      "console": "https://us-west-1.console.aws.amazon.com/redshift/home?region=us-west-1#"
+    },
+    "redshift-serverless": {
+      "console": "https://us-west-1.console.aws.amazon.com/redshift-serverless/home?region=us-west-1#"
+    },
+    "rekognition": {
+      "console": "https://us-west-1.console.aws.amazon.com/rekognition/home?region=us-west-1#"
+    },
+    "resiliencehub": {
+      "console": "https://us-west-1.console.aws.amazon.com/resiliencehub/home?region=us-west-1#"
+    },
+    "resource-explorer-2": {
+      "console": "https://us-west-1.console.aws.amazon.com/resource-explorer-2/home?region=us-west-1#"
+    },
+    "resource-groups": {
+      "console": "https://us-west-1.console.aws.amazon.com/resource-groups/home?region=us-west-1#"
+    },
+    "robomaker": {
+      "console": "https://us-west-1.console.aws.amazon.com/robomaker/home?region=us-west-1#"
+    },
+    "rolesanywhere": {
+      "console": "https://us-west-1.console.aws.amazon.com/rolesanywhere/home?region=us-west-1#"
+    },
+    "route53": {
+      "console": "https://us-west-1.console.aws.amazon.com/route53/home?region=us-west-1#"
+    },
+    "route53-recovery-control-config": {
+      "console": "https://us-west-1.console.aws.amazon.com/route53-recovery-control-config/home?region=us-west-1#"
+    },
+    "route53domains": {
+      "console": "https://us-west-1.console.aws.amazon.com/route53domains/home?region=us-west-1#"
+    },
+    "route53resolver": {
+      "console": "https://us-west-1.console.aws.amazon.com/route53resolver/home?region=us-west-1#"
+    },
+    "rum": {
+      "console": "https://us-west-1.console.aws.amazon.com/rum/home?region=us-west-1#"
+    },
+    "runtime-v2-lex": {
+      "console": "https://us-west-1.console.aws.amazon.com/runtime-v2-lex/home?region=us-west-1#"
+    },
+    "runtime.lex": {
+      "console": "https://us-west-1.console.aws.amazon.com/runtime.lex/home?region=us-west-1#"
+    },
+    "runtime.sagemaker": {
+      "console": "https://us-west-1.console.aws.amazon.com/runtime.sagemaker/home?region=us-west-1#"
+    },
+    "s3": {
+      "console": "https://us-west-1.console.aws.amazon.com/s3/home?region=us-west-1#"
+    },
+    "s3-control": {
+      "console": "https://us-west-1.console.aws.amazon.com/s3-control/home?region=us-west-1#"
+    },
+    "s3-outposts": {
+      "console": "https://us-west-1.console.aws.amazon.com/s3-outposts/home?region=us-west-1#"
+    },
+    "sagemaker-geospatial": {
+      "console": "https://us-west-1.console.aws.amazon.com/sagemaker-geospatial/home?region=us-west-1#"
+    },
+    "savingsplans": {
+      "console": "https://us-west-1.console.aws.amazon.com/savingsplans/home?region=us-west-1#"
+    },
+    "scheduler": {
+      "console": "https://us-west-1.console.aws.amazon.com/scheduler/home?region=us-west-1#"
+    },
+    "schemas": {
+      "console": "https://us-west-1.console.aws.amazon.com/schemas/home?region=us-west-1#"
+    },
+    "sdb": {
+      "console": "https://us-west-1.console.aws.amazon.com/sdb/home?region=us-west-1#"
+    },
+    "secretsmanager": {
+      "console": "https://us-west-1.console.aws.amazon.com/secretsmanager/home?region=us-west-1#"
+    },
+    "securityhub": {
+      "console": "https://us-west-1.console.aws.amazon.com/securityhub/home?region=us-west-1#"
+    },
+    "securitylake": {
+      "console": "https://us-west-1.console.aws.amazon.com/securitylake/home?region=us-west-1#"
+    },
+    "serverlessrepo": {
+      "console": "https://us-west-1.console.aws.amazon.com/serverlessrepo/home?region=us-west-1#"
+    },
+    "servicecatalog": {
+      "console": "https://us-west-1.console.aws.amazon.com/servicecatalog/home?region=us-west-1#"
+    },
+    "servicecatalog-appregistry": {
+      "console": "https://us-west-1.console.aws.amazon.com/servicecatalog-appregistry/home?region=us-west-1#"
+    },
+    "servicediscovery": {
+      "console": "https://us-west-1.console.aws.amazon.com/servicediscovery/home?region=us-west-1#"
+    },
+    "servicequotas": {
+      "console": "https://us-west-1.console.aws.amazon.com/servicequotas/home?region=us-west-1#"
+    },
+    "session.qldb": {
+      "console": "https://us-west-1.console.aws.amazon.com/session.qldb/home?region=us-west-1#"
+    },
+    "shield": {
+      "console": "https://us-west-1.console.aws.amazon.com/shield/home?region=us-west-1#"
+    },
+    "signer": {
+      "console": "https://us-west-1.console.aws.amazon.com/signer/home?region=us-west-1#"
+    },
+    "simspaceweaver": {
+      "console": "https://us-west-1.console.aws.amazon.com/simspaceweaver/home?region=us-west-1#"
+    },
+    "sms": {
+      "console": "https://us-west-1.console.aws.amazon.com/sms/home?region=us-west-1#"
+    },
+    "sms-voice": {
+      "console": "https://us-west-1.console.aws.amazon.com/sms-voice/home?region=us-west-1#"
+    },
+    "snowball": {
+      "console": "https://us-west-1.console.aws.amazon.com/snowball/home?region=us-west-1#"
+    },
+    "sns": {
+      "console": "https://us-west-1.console.aws.amazon.com/sns/home?region=us-west-1#"
+    },
+    "sqs": {
+      "console": "https://us-west-1.console.aws.amazon.com/sqs/home?region=us-west-1#"
+    },
+    "ssm": {
+      "console": "https://us-west-1.console.aws.amazon.com/ssm/home?region=us-west-1#"
+    },
+    "ssm-contacts": {
+      "console": "https://us-west-1.console.aws.amazon.com/ssm-contacts/home?region=us-west-1#"
+    },
+    "ssm-incidents": {
+      "console": "https://us-west-1.console.aws.amazon.com/ssm-incidents/home?region=us-west-1#"
+    },
+    "ssm-sap": {
+      "console": "https://us-west-1.console.aws.amazon.com/ssm-sap/home?region=us-west-1#"
+    },
+    "sso": {
+      "console": "https://us-west-1.console.aws.amazon.com/sso/home?region=us-west-1#"
+    },
+    "states": {
+      "console": "https://us-west-1.console.aws.amazon.com/states/home?region=us-west-1#"
+    },
+    "storagegateway": {
+      "console": "https://us-west-1.console.aws.amazon.com/storagegateway/home?region=us-west-1#"
+    },
+    "streams.dynamodb": {
+      "console": "https://us-west-1.console.aws.amazon.com/streams.dynamodb/home?region=us-west-1#"
+    },
+    "sts": {
+      "console": "https://us-west-1.console.aws.amazon.com/sts/home?region=us-west-1#"
+    },
+    "support": {
+      "console": "https://us-west-1.console.aws.amazon.com/support/home?region=us-west-1#"
+    },
+    "supportapp": {
+      "console": "https://us-west-1.console.aws.amazon.com/supportapp/home?region=us-west-1#"
+    },
+    "swf": {
+      "console": "https://us-west-1.console.aws.amazon.com/swf/home?region=us-west-1#"
+    },
+    "synthetics": {
+      "console": "https://us-west-1.console.aws.amazon.com/synthetics/home?region=us-west-1#"
+    },
+    "tagging": {
+      "console": "https://us-west-1.console.aws.amazon.com/tagging/home?region=us-west-1#"
+    },
+    "textract": {
+      "console": "https://us-west-1.console.aws.amazon.com/textract/home?region=us-west-1#"
+    },
+    "tnb": {
+      "console": "https://us-west-1.console.aws.amazon.com/tnb/home?region=us-west-1#"
+    },
+    "transcribe": {
+      "console": "https://us-west-1.console.aws.amazon.com/transcribe/home?region=us-west-1#"
+    },
+    "transcribestreaming": {
+      "console": "https://us-west-1.console.aws.amazon.com/transcribestreaming/home?region=us-west-1#"
+    },
+    "transfer": {
+      "console": "https://us-west-1.console.aws.amazon.com/transfer/home?region=us-west-1#"
+    },
+    "translate": {
+      "console": "https://us-west-1.console.aws.amazon.com/translate/home?region=us-west-1#"
+    },
+    "verifiedpermissions": {
+      "console": "https://us-west-1.console.aws.amazon.com/verifiedpermissions/home?region=us-west-1#"
+    },
+    "voice-chime": {
+      "console": "https://us-west-1.console.aws.amazon.com/voice-chime/home?region=us-west-1#"
+    },
+    "voiceid": {
+      "console": "https://us-west-1.console.aws.amazon.com/voiceid/home?region=us-west-1#"
+    },
+    "vpc-lattice": {
+      "console": "https://us-west-1.console.aws.amazon.com/vpc-lattice/home?region=us-west-1#"
+    },
+    "waf": {
+      "console": "https://us-west-1.console.aws.amazon.com/waf/home?region=us-west-1#"
+    },
+    "waf-regional": {
+      "console": "https://us-west-1.console.aws.amazon.com/waf-regional/home?region=us-west-1#"
+    },
+    "wafv2": {
+      "console": "https://us-west-1.console.aws.amazon.com/wafv2/home?region=us-west-1#"
+    },
+    "wellarchitected": {
+      "console": "https://us-west-1.console.aws.amazon.com/wellarchitected/home?region=us-west-1#"
+    },
+    "wisdom": {
+      "console": "https://us-west-1.console.aws.amazon.com/wisdom/home?region=us-west-1#"
+    },
+    "workdocs": {
+      "console": "https://us-west-1.console.aws.amazon.com/workdocs/home?region=us-west-1#"
+    },
+    "workmail": {
+      "console": "https://us-west-1.console.aws.amazon.com/workmail/home?region=us-west-1#"
+    },
+    "workspaces": {
+      "console": "https://us-west-1.console.aws.amazon.com/workspaces/home?region=us-west-1#"
+    },
+    "workspaces-web": {
+      "console": "https://us-west-1.console.aws.amazon.com/workspaces-web/home?region=us-west-1#"
+    },
+    "xray": {
+      "console": "https://us-west-1.console.aws.amazon.com/xray/home?region=us-west-1#"
+    }
+  }
+}
