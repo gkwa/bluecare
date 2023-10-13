@@ -52,16 +52,16 @@
       "console": "https://us-west-1.console.aws.amazon.com/api.iotwireless/home?region=us-west-1#"
     },
     "api.mediatailor": {
-      "console": "https://us-west-1.console.aws.amazon.com/api.mediatailor/home?region=us-west-1#"
+      "console": "https://us-west-1.console.aws.amazon.com/mediatailor/home?region=us-west-1#"
     },
     "api.pricing": {
-      "console": "https://us-west-1.console.aws.amazon.com/api.pricing/home?region=us-west-1#"
+      "console": "https://us-west-1.console.aws.amazon.com/pricing/home?region=us-west-1#"
     },
     "api.sagemaker": {
       "console": "https://us-west-1.console.aws.amazon.com/api.sagemaker/home?region=us-west-1#"
     },
     "api.tunneling.iot": {
-      "console": "https://us-west-1.console.aws.amazon.com/api.tunneling.iot/home?region=us-west-1#"
+      "console": "https://us-west-1.console.aws.amazon.com/iot/home?region=us-west-1#"
     },
     "apigateway": {
       "console": "https://us-west-1.console.aws.amazon.com/apigateway/home?region=us-west-1#"
@@ -70,7 +70,7 @@
       "console": "https://us-west-1.console.aws.amazon.com/app-integrations/home?region=us-west-1#"
     },
     "appconfig": {
-      "console": "https://us-west-1.console.aws.amazon.com/appconfig/home?region=us-west-1#"
+      "console": "https://us-west-1.console.aws.amazon.com/systemsmanager/home?region=us-west-1#"
     },
     "appconfigdata": {
       "console": "https://us-west-1.console.aws.amazon.com/appconfigdata/home?region=us-west-1#"
