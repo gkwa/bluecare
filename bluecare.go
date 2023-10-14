@@ -9,13 +9,14 @@ import (
 	"net/http/httputil"
 	"os"
 	"strings"
+
+	mymazda "github.com/taylormonacelli/forestfish/mymazda"
 )
 
 var outputPath = "/tmp/endpoints_edited.json"
 
 func FetchEditedEndpoints() {
 	url := "https://raw.githubusercontent.com/taylormonacelli/bluecare/master/endpoints_edited.json"
-	outputPath := "/tmp/endpoints_edited.json"
 
 	slog.Debug("Fetching the file from", url)
 
@@ -86,7 +87,11 @@ func testLoad() error {
 }
 
 func GetServiceURLMap() (map[string]string, error) {
-	file, err := os.Open("/tmp/endpoints_edited.json")
+	if !mymazda.FileExists(outputPath) {
+		FetchEditedEndpoints()
+	}
+
+	file, err := os.Open(outputPath)
 	if err != nil {
 		slog.Error("Error opening the file", "error", err.Error())
 		return make(map[string]string), err
