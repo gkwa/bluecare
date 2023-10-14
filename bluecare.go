@@ -9,6 +9,7 @@ import (
 	"net/http/httputil"
 	"os"
 	"strings"
+
 )
 
 var outputPath = "/tmp/endpoints_edited.json"
@@ -246,7 +247,7 @@ func GetServiceURLInRegion(service, region string) (string, error) {
 }
 
 func GetServiceURL(service string) (string, error) {
-	serviceMap, err := getServiceURLMap()
+	serviceMap, err := GetServiceURLMap()
 	if err != nil {
 		return "", err
 	}

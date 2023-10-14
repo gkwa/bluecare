@@ -316,7 +316,7 @@
       "console": "https://us-west-1.console.aws.amazon.com/ebs/home?region=us-west-1#"
     },
     "ec2": {
-      "console": "https://us-west-1.console.aws.amazon.com/ec2/home?region=us-west-1#"
+      "console": "https://us-west-1.console.aws.amazon.com/ec2/home?region=us-west-1#Instances:v=3;$case=tags:true%5C,client:false;$regex=tags:false%5C,client:false"
     },
     "ecs": {
       "console": "https://us-west-1.console.aws.amazon.com/ecs/home?region=us-west-1#"
