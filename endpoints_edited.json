@@ -844,7 +844,7 @@
       "console": "https://us-west-1.console.aws.amazon.com/sqs/v2/home?region=us-west-1#/queues"
     },
     "ssm": {
-      "console": "https://us-west-1.console.aws.amazon.com/ssm/home?region=us-west-1#"
+      "console": "https://us-west-1.console.aws.amazon.com/systems-manager/home?region=us-west-1#"
     },
     "ssm-contacts": {
       "console": "https://us-west-1.console.aws.amazon.com/ssm-contacts/home?region=us-west-1#"
