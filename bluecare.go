@@ -85,7 +85,7 @@ func testLoad() error {
 	return nil
 }
 
-func getServiceURLMap() (map[string]string, error) {
+func GetServiceURLMap() (map[string]string, error) {
 	file, err := os.Open("/tmp/endpoints_edited.json")
 	if err != nil {
 		slog.Error("Error opening the file", "error", err.Error())
