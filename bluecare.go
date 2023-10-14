@@ -9,7 +9,6 @@ import (
 	"net/http/httputil"
 	"os"
 	"strings"
-
 )
 
 var outputPath = "/tmp/endpoints_edited.json"
