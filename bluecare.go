@@ -52,7 +52,7 @@ func FetchEditedEndpoints() {
 		slog.Error("Failed to save the file: %s", err)
 		return
 	}
-	slog.Debug("File saved at", outputPath)
+	slog.Debug("File saved at", "path", outputPath)
 
 	// Print the response for debugging
 	responseDump, err := httputil.DumpResponse(resp, true)
