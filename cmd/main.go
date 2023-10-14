@@ -11,6 +11,6 @@ import (
 func main() {
 	goldbug.SetDefaultLoggerText(slog.LevelDebug)
 
-	status := bluecare.Execute()
+	status := bluecare.Execute("ec2", "us-west-2")
 	os.Exit(status)
 }

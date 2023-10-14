@@ -4,17 +4,72 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
-	"log"
 	"log/slog"
 	"net/http"
+	"net/http/httputil"
 	"os"
+	"strings"
 )
 
-func load() {
-	file, err := os.Open("endpoints_edited.json")
+var outputPath = "/tmp/endpoints_edited.json"
+
+func FetchEditedEndpoints() {
+	url := "https://raw.githubusercontent.com/taylormonacelli/bluecare/master/endpoints_edited.json"
+	outputPath := "/tmp/endpoints_edited.json"
+
+	slog.Debug("Fetching the file from", url)
+
+	resp, err := http.Get(url)
 	if err != nil {
-		log.Fatalf("Error opening the JSON file: %v", err)
+		slog.Error("Failed to fetch the file: %s", err)
 		return
+	}
+
+	slog.Debug("file fetched successfully", "url", url, "path", outputPath)
+
+	// Print the request for debugging
+	requestDump, err := httputil.DumpRequestOut(resp.Request, true)
+	if err != nil {
+		slog.Error("Failed to dump request:", "error", err.Error())
+	} else {
+		slog.Debug("request dump", "dump", string(requestDump))
+	}
+
+	defer resp.Body.Close()
+
+	outFile, err := os.Create(outputPath)
+	if err != nil {
+		slog.Error("Failed to create the output file: %s", err)
+		return
+	}
+	slog.Debug("Output file created at", outputPath)
+
+	defer outFile.Close()
+
+	_, err = io.Copy(outFile, resp.Body)
+	if err != nil {
+		slog.Error("Failed to save the file: %s", err)
+		return
+	}
+	slog.Debug("File saved at", outputPath)
+
+	// Print the response for debugging
+	responseDump, err := httputil.DumpResponse(resp, true)
+	if err != nil {
+		slog.Error("Failed to dump response:", err)
+	} else {
+		slog.Debug("Response:")
+		slog.Debug(string(responseDump))
+	}
+}
+
+func testLoad() error {
+	slog.Debug("check file exists", "path", outputPath)
+
+	file, err := os.Open(outputPath)
+	if err != nil {
+		slog.Warn("Error opening the JSON file: %v", err)
+		return err
 	}
 	defer file.Close() // Close the file when done
 
@@ -23,19 +78,37 @@ func load() {
 	decoder := json.NewDecoder(file)
 
 	if err := decoder.Decode(&serviceList); err != nil {
-		log.Fatalf("Error decoding JSON: %v", err)
-		return
+		slog.Warn("Error decoding JSON", "error", err.Error())
+		return err
 	}
 
-	var services []Service
-	for name, service := range serviceList.Services {
-		service.Name = name
-		services = append(services, service)
+	return nil
+}
+
+func getServiceURLMap() (map[string]string, error) {
+	file, err := os.Open("/tmp/endpoints_edited.json")
+	if err != nil {
+		slog.Error("Error opening the file", "error", err.Error())
+		return make(map[string]string), err
+	}
+	defer file.Close()
+
+	serviceURLMap := make(map[string]string)
+
+	var data map[string]map[string]map[string]string
+
+	decoder := json.NewDecoder(file)
+	if err := decoder.Decode(&data); err != nil {
+		slog.Error("Error decoding JSON", "error", err.Error())
+		return make(map[string]string), err
 	}
 
-	for _, service := range services {
-		slog.Debug("services", "service", service.Name, "url", service.ConsoleURL)
+	for serviceName, serviceData := range data["services"] {
+		serviceURL := serviceData["console"]
+		serviceURLMap[serviceName] = serviceURL
 	}
+
+	return serviceURLMap, nil
 }
 
 func fetchAndReconcile() int {
@@ -161,9 +234,35 @@ func readExistingData(filePath string) map[string]map[string]string {
 	return data["services"]
 }
 
-func Execute() int {
-	fetchAndReconcile()
-	load()
+func GetServiceURLInRegion(service, region string) (string, error) {
+	url, err := GetServiceURL(service)
+	if err != nil {
+		slog.Error("resolve url to service", "error", err.Error())
+		return "", err
+	}
 
+	url = strings.Replace(url, "us-west-1", region, -1)
+	return url, nil
+}
+
+func GetServiceURL(service string) (string, error) {
+	serviceMap, err := getServiceURLMap()
+	if err != nil {
+		return "", err
+	}
+
+	return serviceMap[service], nil
+}
+
+func Execute(service, region string) int {
+	fetchAndReconcile()
+
+	err := testLoad()
+	if err != nil {
+		FetchEditedEndpoints()
+	}
+
+	url, _ := GetServiceURLInRegion(service, region)
+	slog.Debug("get url", "service", service, "url", url)
 	return 0
 }
