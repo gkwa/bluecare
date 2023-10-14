@@ -13,54 +13,53 @@ import (
 	mymazda "github.com/taylormonacelli/forestfish/mymazda"
 )
 
-var outputPath = "/tmp/endpoints_edited.json"
+var endpointsEditedJsonPath = "/tmp/endpoints_edited.json"
 
 func FetchEditedEndpoints() {
 	url := "https://raw.githubusercontent.com/taylormonacelli/bluecare/master/endpoints_edited.json"
 
-	slog.Debug("Fetching the file from", url)
+	slog.Debug("fetching file", "url", url)
 
 	resp, err := http.Get(url)
 	if err != nil {
-		slog.Error("Failed to fetch the file: %s", err)
+		slog.Error("fetching file failed", "error", err.Error())
 		return
 	}
 
-	slog.Debug("file fetched successfully", "url", url, "path", outputPath)
+	slog.Debug("file fetched successfully", "url", url, "path", endpointsEditedJsonPath)
 
 	// Print the request for debugging
 	requestDump, err := httputil.DumpRequestOut(resp.Request, true)
 	if err != nil {
-		slog.Error("Failed to dump request:", "error", err.Error())
+		slog.Error("failed to dump request", "error", err.Error())
 	} else {
 		slog.Debug("request dump", "dump", string(requestDump))
 	}
 
 	defer resp.Body.Close()
 
-	outFile, err := os.Create(outputPath)
+	outFile, err := os.Create(endpointsEditedJsonPath)
 	if err != nil {
-		slog.Error("Failed to create the output file: %s", err)
+		slog.Error("failed to create output file", "path", endpointsEditedJsonPath, "error", err.Error())
 		return
 	}
-	slog.Debug("Output file created at", outputPath)
+	slog.Debug("output file created", "path", endpointsEditedJsonPath)
 
 	defer outFile.Close()
 
 	_, err = io.Copy(outFile, resp.Body)
 	if err != nil {
-		slog.Error("Failed to save the file: %s", err)
+		slog.Error("file save failed", "error", err.Error())
 		return
 	}
-	slog.Debug("File saved at", "path", outputPath)
+	slog.Debug("file saved", "path", endpointsEditedJsonPath)
 
 	// Print the response for debugging
 	responseDump, err := httputil.DumpResponse(resp, true)
 	if err != nil {
 		slog.Error("Failed to dump response:", err)
 	} else {
-		slog.Debug("Response:")
-		slog.Debug(string(responseDump))
+		slog.Debug("http fetch", "response", string(responseDump))
 	}
 }
 
@@ -78,21 +77,21 @@ func GetServices() []string {
 }
 
 func testLoad() error {
-	slog.Debug("check file exists", "path", outputPath)
+	slog.Debug("check file exists", "path", endpointsEditedJsonPath)
 
-	file, err := os.Open(outputPath)
+	file, err := os.Open(endpointsEditedJsonPath)
 	if err != nil {
-		slog.Warn("Error opening the JSON file: %v", err)
+		slog.Warn("error opening JSON file", "path", endpointsEditedJsonPath, "error", err.Error())
 		return err
 	}
-	defer file.Close() // Close the file when done
+	defer file.Close()
 
 	var serviceList ServiceList
 
 	decoder := json.NewDecoder(file)
 
 	if err := decoder.Decode(&serviceList); err != nil {
-		slog.Warn("Error decoding JSON", "error", err.Error())
+		slog.Warn("error decoding JSON", "error", err.Error())
 		return err
 	}
 
@@ -100,11 +99,11 @@ func testLoad() error {
 }
 
 func GetServiceURLMap() (map[string]string, error) {
-	if !mymazda.FileExists(outputPath) {
+	if !mymazda.FileExists(endpointsEditedJsonPath) {
 		FetchEditedEndpoints()
 	}
 
-	file, err := os.Open(outputPath)
+	file, err := os.Open(endpointsEditedJsonPath)
 	if err != nil {
 		slog.Error("Error opening the file", "error", err.Error())
 		return make(map[string]string), err
