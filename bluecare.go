@@ -64,6 +64,19 @@ func FetchEditedEndpoints() {
 	}
 }
 
+func GetServices() []string {
+	myMap, err := GetServiceURLMap()
+	if err != nil {
+		panic(err)
+	}
+	keys := make([]string, 0, len(myMap))
+	for key := range myMap {
+		keys = append(keys, key)
+	}
+
+	return keys
+}
+
 func testLoad() error {
 	slog.Debug("check file exists", "path", outputPath)
 
