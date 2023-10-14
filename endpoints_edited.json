@@ -850,7 +850,7 @@
       "console": "https://us-west-1.console.aws.amazon.com/ssm-contacts/home?region=us-west-1#"
     },
     "ssm-incidents": {
-      "console": "https://us-west-1.console.aws.amazon.com/ssm-incidents/home?region=us-west-1#"
+      "console": "https://us-west-1.console.aws.amazon.com/systems-manager/incidents/prepare/home?region=us-west-1#/"
     },
     "ssm-sap": {
       "console": "https://us-west-1.console.aws.amazon.com/ssm-sap/home?region=us-west-1#"
