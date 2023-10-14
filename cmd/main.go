@@ -20,6 +20,7 @@ var (
 func main() {
 	flag.BoolVar(&verbose, "verbose", false, "Enable verbose output")
 	flag.BoolVar(&verbose, "v", false, "Enable verbose output (shorthand)")
+
 	flag.StringVar(&logFormat, "log-format", "", "Log format (text or json)")
 
 	flag.BoolVar(&services, "services", false, "List services")
