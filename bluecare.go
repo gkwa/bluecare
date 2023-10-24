@@ -105,7 +105,7 @@ func GetServiceURLMap() (map[string]string, error) {
 
 	file, err := os.Open(endpointsEditedJsonPath)
 	if err != nil {
-		slog.Error("Error opening the file", "error", err.Error())
+		slog.Error("error opening file", "path", endpointsEditedJsonPath, "error", err.Error())
 		return make(map[string]string), err
 	}
 	defer file.Close()
@@ -281,5 +281,6 @@ func Execute(service, region string) int {
 
 	url, _ := GetServiceURLInRegion(service, region)
 	slog.Debug("get url", "service", service, "url", url)
+
 	return 0
 }
